@@ -1,0 +1,128 @@
+html,body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient( 110.1deg,  rgba(30,2,83,1) 44.2%, rgba(198,55,160,1) 138.2% );    color: aliceblue;
+}
+
+main{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+section img{
+  max-width: 100%; /* Evita que la imagen se salga del div */
+  border-radius: 5%;;
+}
+
+.title{
+  text-align: center;
+}
+
+.cats{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 20px;
+}
+
+.fact-responsive{
+  max-width: 100%;
+  padding: 20px;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .fact {
+    display: none;
+  }
+
+  .fact-responsive{
+      display:contents;
+  }
+
+  .custom-button{
+      width: 200px;
+  }
+
+  .img-container{
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+}
+
+.button-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button{
+  width: 300px;
+  height: 40px;
+  border: 0px;
+  border-radius: 4px;
+  font-family: 'Coffee', sans-serif;
+  font-size: x-large;
+}
+
+button:hover {
+background-color: rgb(121, 114, 114);
+}
+
+footer{
+display: flex;
+margin-top: auto;
+color: aliceblue;
+justify-items: center;
+justify-content: space-between;
+width: 100%;
+padding-right: 20px;
+padding-left: 20px;
+}
+
+.footer-div{
+  display: flex;
+margin-top: auto;
+color: aliceblue;
+justify-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+
+ul{
+  display: flex;
+  list-style-type: square;
+}
+
+
+a{
+color: aliceblue;
+text-decoration: none;
+}
+
+
+@font-face {
+  font-family: 'Coffee';
+  src: url('./fonts/Take-Coffee.ttf') format('truetype');
+}
+
+.title {
+  font-family: 'Coffee', sans-serif;
+  font-size: xxx-large;
+}
